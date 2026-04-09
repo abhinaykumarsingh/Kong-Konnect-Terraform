@@ -1,5 +1,6 @@
 resource "konnect_gateway_consumer" "user1" {
   username          = "abhinay"
+  custom_id = "123456789"
   control_plane_id  = var.control_plane_id
 }
 
