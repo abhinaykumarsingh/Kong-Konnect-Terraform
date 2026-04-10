@@ -9,3 +9,9 @@ variable "konnect_token" {
   type        = string
   sensitive   = true
 }
+
+variable "api_key_value" {
+  description = "API Key Value for Key-Auth assigned to Consumer"
+  type        = string
+  sensitive   = true
+}
