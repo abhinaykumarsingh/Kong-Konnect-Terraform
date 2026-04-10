@@ -5,7 +5,7 @@ resource "konnect_gateway_consumer" "user1" {
 }
 
 resource "konnect_gateway_key_auth" "my_keyauth" {
-  key              = "spiderx"
+  key              = var.api_key_value
   consumer_id      = konnect_gateway_consumer.user1.id
   control_plane_id = var.control_plane_id
 }

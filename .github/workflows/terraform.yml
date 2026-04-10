@@ -29,6 +29,7 @@ jobs:
         env:
           TF_VAR_konnect_token: ${{ secrets.KONNECT_TOKEN }}
           TF_VAR_control_plane_id: ${{ secrets.CONTROL_PLANE_ID }}
+          TF_VAR_api_key_value: ${{ secrets.API_KEY_VALUE }}
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -36,3 +37,4 @@ jobs:
         env:
           TF_VAR_konnect_token: ${{ secrets.KONNECT_TOKEN }}
           TF_VAR_control_plane_id: ${{ secrets.CONTROL_PLANE_ID }}
+          TF_VAR_api_key_value: ${{ secrets.API_KEY_VALUE }}
